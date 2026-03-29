@@ -1,0 +1,27 @@
+{
+  "name": "monthly_kpi_reporter",
+  "description": "HW1 component foundation workflow",
+  "architecture": [
+    "Monthly Schedule Trigger",
+    "Processing Function (Python)",
+    "Google Sheets API",
+    "AI Completion"
+  ],
+  "trigger": {
+    "type": "schedule",
+    "cron": "0 9 1 * *",
+    "timezone": "Europe/Istanbul"
+  },
+  "data_source": {
+    "type": "google_sheets",
+    "sheet_name": "Monthly_KPIs"
+  },
+  "processing_function": {
+    "language": "python",
+    "entrypoint": "src/kpi_reporter.py"
+  },
+  "ai_step": {
+    "type": "completion",
+    "purpose": "Generate a short executive KPI summary"
+  }
+}
