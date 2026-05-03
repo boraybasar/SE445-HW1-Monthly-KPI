@@ -16,7 +16,7 @@ Google Sheets → Apps Script → Gmail
 All screenshots are available in the `/evidence` folder.
 
 ### Key Guarantees
-- Live data pipeline ✔
-- Real email delivery ✔
-- No data loss ✔
-- No formatting errors ✔
+- Live data pipeline 
+- Real email delivery 
+- No data loss 
+- No formatting errors 
